@@ -1,13 +1,16 @@
 ** CG Term project **
 
 
-1. team member
+* Team member :
 
 	2013210130 장민재
+
 	2013210132 이명지
+
 	2013210135 Ganbat Munkhsoyol
 
-2. content of our project : 구슬 넣기 게임
+
+* Content of our project : 구슬 넣기 게임
 
 어린 시절 많이 해봤던 구슬 넣기 게임을 Tizen 어플리케이션으로 제작할 것이다.
 
@@ -18,7 +21,7 @@
 수업시간에 다룬 그래픽스 기술들을 게임의 배경이나 물리적 효과 등으로 충실히 반영하고자 한다.
 
 
-3. Development Environment
+* Development environment :
 
 	OpenGL
 
