@@ -3,24 +3,24 @@
 
 * Team member :
 
-	2013210130 Àå¹ÎÀç
+	2013210130 ìž¥ë¯¼ìž¬
 
-	2013210132 ÀÌ¸íÁö
+	2013210132 ì´ëª…ì§€
 
 	2013210135 Ganbat Munkhsoyol
 
 
-* Content of our project : ±¸½½ ³Ö±â °ÔÀÓ
+* Content of our project : êµ¬ìŠ¬ ë„£ê¸° ê²Œìž„
 
-¾î¸° ½ÃÀý ¸¹ÀÌ ÇØºÃ´ø ±¸½½ ³Ö±â °ÔÀÓÀ» Tizen ¾îÇÃ¸®ÄÉÀÌ¼ÇÀ¸·Î Á¦ÀÛÇÒ °ÍÀÌ´Ù.
+ì–´ë¦° ì‹œì ˆ ë§Žì´ í•´ë´¤ë˜ êµ¬ìŠ¬ ë„£ê¸° ê²Œìž„ì„ Tizen ì–´í”Œë¦¬ì¼€ì´ì…˜ìœ¼ë¡œ ì œìž‘í•  ê²ƒì´ë‹¤.
 
-ÇÃ·¹ÀÌ¾î´Â ½º¸¶Æ®ÆùÀ» »óÇÏÁÂ¿ì·Î ¿òÁ÷¿©¼­ Àå¾Ö¹°À» ÇÇÇØ ±¸½½À» ¸ñÇ¥ ±¸¸Û¿¡ ³Ö¾î¾ß ÇÑ´Ù.
+í”Œë ˆì´ì–´ëŠ” ìŠ¤ë§ˆíŠ¸í°ì„ ìƒí•˜ì¢Œìš°ë¡œ ì›€ì§ì—¬ì„œ ìž¥ì• ë¬¼ì„ í”¼í•´ êµ¬ìŠ¬ì„ ëª©í‘œ êµ¬ë©ì— ë„£ì–´ì•¼ í•œë‹¤.
 
-½º¸¶Æ®ÆùÀÇ ±â¿ïÀÓÀº tizen gyroscope ¼¾¼­¸¦ ÀÌ¿ëÇÏ¿© °¨ÁöÇÒ °ÍÀÌ¸ç,
+ìŠ¤ë§ˆíŠ¸í°ì˜ ê¸°ìš¸ìž„ì€ tizen gyroscope ì„¼ì„œë¥¼ ì´ìš©í•˜ì—¬ ê°ì§€í•  ê²ƒì´ë©°,
 
-¼ö¾÷½Ã°£¿¡ ´Ù·é ±×·¡ÇÈ½º ±â¼úµéÀ» °ÔÀÓÀÇ ¹è°æÀÌ³ª ¹°¸®Àû È¿°ú µîÀ¸·Î Ãæ½ÇÈ÷ ¹Ý¿µÇÏ°íÀÚ ÇÑ´Ù.
+ìˆ˜ì—…ì‹œê°„ì— ë‹¤ë£¬ ê·¸ëž˜í”½ìŠ¤ ê¸°ìˆ ë“¤ì„ ê²Œìž„ì˜ ë°°ê²½ì´ë‚˜ ë¬¼ë¦¬ì  íš¨ê³¼ ë“±ìœ¼ë¡œ ì¶©ì‹¤ížˆ ë°˜ì˜í•˜ê³ ìž í•œë‹¤.
 
-
+Read Me file should be updated every week
 * Development environment :
 
 	OpenGL
