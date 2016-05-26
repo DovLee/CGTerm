@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="2.3.1" package="org.tizen.gravityball" version="1.0.0">
+    <ui-application appid="org.tizen.gravityball" exec="gravityball" multiple="false" nodisplay="false" taskmanage="true" type="capp">
+        <label>gravityball</label>
+        <icon>gravityball.png</icon>
+    </ui-application>
+</manifest>

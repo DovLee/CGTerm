@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<profiles version="3.0">
+<profile name="Enjoymaa">
+<profileitem ca="" distributor="0" key="C:\tizen-sdk-data\keystore\Enjoymaa\author.p12" password="gdK3Bw2ApIs=" rootca=""/>
+<profileitem ca="" distributor="1" key="C:\tizen-sdk-data\keystore\Enjoymaa\distributor.p12" password="gdK3Bw2ApIs=" rootca=""/>
+</profile>
+</profiles>
