@@ -1,0 +1,13 @@
+Project schedule
+
+
+5.16~ 22 --> Rotation , Translation
+
+5.23~ 29 --> Ball (Mesh) Block (Mesh) apply 
+
+5.30~ 6.5 --> GUI and ball-block
+
+6.6 ~ 6.12 --> lanch
+
+
+Texture mapping, Lighting , shadow, 
