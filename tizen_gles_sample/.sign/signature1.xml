@@ -4,15 +4,19 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>SOn4bOZi3YmqrlgU46uNPd8Gy1ffbdSB6cUzX02sfHA=</DigestValue>
+<DigestValue>bLlgfvhYF14T7t2fpfVpL2Einfk9H2yr9hcG/GCgyb8=</DigestValue>
 </Reference>
 <Reference URI="bin%2Ftizen_gles_sample">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>+wKWqai+lQdudJc1OwzINCIfo13fBbfxJKOxd/9uTZ4=</DigestValue>
+<DigestValue>dOIjOIGP8kUPhS/C7rZl3jKPPEzkBhZyHZhlCcet3Zk=</DigestValue>
 </Reference>
 <Reference URI="res%2Fobj3d%2Fball">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>XTAHzWO/7N6l39ViwlomSGiazt7l1xOf4aetspJXXGs=</DigestValue>
+<DigestValue>j9gJ++rZ+Jth+Y9sHFu7ZTrdbTjJe3D84ehYxscD5bE=</DigestValue>
+</Reference>
+<Reference URI="res%2Fobj3d%2Fball1">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>km3Mz3JThGUALnYjmyRh/1MM4H+KCu6TATCol/FFHXM=</DigestValue>
 </Reference>
 <Reference URI="res%2Fobj3d%2Fcube">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -21,6 +25,18 @@
 <Reference URI="res%2Fobj3d%2Ffootball">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>q1CY20l3ggUyAbVjEDJtHMqCXR3PVqN5l0X7HYP6mTM=</DigestValue>
+</Reference>
+<Reference URI="res%2Fobj3d%2Fsphere">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>0a60BSJdTwamErC784wQ+5eiFbkJmmEdejLqFJLUML8=</DigestValue>
+</Reference>
+<Reference URI="res%2Fobj3d%2Fsphere2">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>f3Sj5WmhnUEIJiCRCnaRY8nD8YS/CyxB4gbGKpSh7oo=</DigestValue>
+</Reference>
+<Reference URI="res%2Fobj3d%2Fsphere3">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>gwmxk9NBJV4wNBYT/0vuhAhFlAlGqyfZ6fMM8SknU6o=</DigestValue>
 </Reference>
 <Reference URI="res%2Fobj3d%2Fteapot">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -78,6 +94,14 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>Akd1pvKXkhnhqw1gCYlN6JILHFpsrTbmqdcJmOxqRrI=</DigestValue>
 </Reference>
+<Reference URI="res%2Ftex%2Fsoccer.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>JCezoo8Lw4nExrQCeETI40Y/pKT6TKn7DzN8mFxUaIQ=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fsphere.bmp">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>f/3cVAglDmAhCnCZkg00pSYk23HTQA3goV0qLREuiFE=</DigestValue>
+</Reference>
 <Reference URI="res%2Ftex%2Ftex_c_brick.bmp">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>KiwEH35YFwnFau3Ftd3Iqn18ugl51h+5ljApSJidFVU=</DigestValue>
@@ -119,11 +143,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-YI3lt/jcFBcN0P+LspzirR+e8zQy29jf9XKvFK25vk1sP+3Ot8+JyBo4fCki6gSXLXyJiGkSB1W0
-+9W4l19eDdKBT4dyGH1sfOCQlvWrgAJbOzVgR/3SaWf0FUWTozCBb7NK6ruJkYZMaE9QRuXztlMK
-z9t+0U9ExheUHzjWTwwIrLcOJskvZDwFMmMUCfYzVYhm/mGQXb5TBQ13K9y1YXG0c2/gkyXPgenD
-gfyVRnPyVaZNKlDwxq3hv89nSW0pgN/ClqpR4GvYd2Q/KI3JpI+h8mCwkMEPleaCuQ25rRdxLVnM
-aPHz/FbBTPRcR6beo3uYYa3Z1vECCSk/Z6cJXA==
+LuoIpSyOqHaZlOmvS92E4PJrp/vD0B9uh9xVyMrNgMmFbwzpDr+97FgK4U0orkBH+Eeyn13x//QK
+WAzO9WTSX5UM4PlHDsoXCCjaAVHgCNkjVcODucfchU4LTWVNKKoGYTPGnDSM/LgIurDk+0Y5DEQO
+WFNyH18OHrBhSJoSRxPFTc1mSjb/qKwCQdtJ/4TOiD40GK586yvT2fHO3jj0qtmLTPPlkMD4HmTR
+2R1tiyxcwmCnP6CZfdrmzqCZQBf4vrVpcghhvaeorrQlZP8mDrIkNlWMvL1mfItDH3Xm+rm62sl5
+PfBA6fKT7GRBtDc6Eh2R6Ym2oVgTuIfbPM05Cw==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

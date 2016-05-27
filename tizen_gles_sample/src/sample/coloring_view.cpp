@@ -14,13 +14,13 @@ void ColoringView::OnInit()
 	string fs = FileLoader::GetInstance()->ReadTxtFile("shader/view_color/color.fs");
 	mViewRenderer->SetProgram(vs, fs);
 
-	string teapot = FileLoader::GetInstance()->ReadTxtFile("obj3d/teapot");
+	string teapot = FileLoader::GetInstance()->ReadTxtFile("obj3d/sphere3");
 
 	TexData textJ;
 	FileLoader::GetInstance()->ReadTexture("tex/tizen_black.png", textJ);
 
 
-	float scale = 1.0f;
+	float scale = 6.0f;
 	mViewRenderer->SetNewModel(teapot, scale);
 	mViewRenderer->SetTexture(TEXDATA_GENERAL, &textJ);
 

@@ -4,11 +4,15 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="bin%2Ftizen_gles_sample">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>+wKWqai+lQdudJc1OwzINCIfo13fBbfxJKOxd/9uTZ4=</DigestValue>
+<DigestValue>dOIjOIGP8kUPhS/C7rZl3jKPPEzkBhZyHZhlCcet3Zk=</DigestValue>
 </Reference>
 <Reference URI="res%2Fobj3d%2Fball">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>XTAHzWO/7N6l39ViwlomSGiazt7l1xOf4aetspJXXGs=</DigestValue>
+<DigestValue>j9gJ++rZ+Jth+Y9sHFu7ZTrdbTjJe3D84ehYxscD5bE=</DigestValue>
+</Reference>
+<Reference URI="res%2Fobj3d%2Fball1">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>km3Mz3JThGUALnYjmyRh/1MM4H+KCu6TATCol/FFHXM=</DigestValue>
 </Reference>
 <Reference URI="res%2Fobj3d%2Fcube">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -17,6 +21,18 @@
 <Reference URI="res%2Fobj3d%2Ffootball">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>q1CY20l3ggUyAbVjEDJtHMqCXR3PVqN5l0X7HYP6mTM=</DigestValue>
+</Reference>
+<Reference URI="res%2Fobj3d%2Fsphere">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>0a60BSJdTwamErC784wQ+5eiFbkJmmEdejLqFJLUML8=</DigestValue>
+</Reference>
+<Reference URI="res%2Fobj3d%2Fsphere2">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>f3Sj5WmhnUEIJiCRCnaRY8nD8YS/CyxB4gbGKpSh7oo=</DigestValue>
+</Reference>
+<Reference URI="res%2Fobj3d%2Fsphere3">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>gwmxk9NBJV4wNBYT/0vuhAhFlAlGqyfZ6fMM8SknU6o=</DigestValue>
 </Reference>
 <Reference URI="res%2Fobj3d%2Fteapot">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -74,6 +90,14 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>Akd1pvKXkhnhqw1gCYlN6JILHFpsrTbmqdcJmOxqRrI=</DigestValue>
 </Reference>
+<Reference URI="res%2Ftex%2Fsoccer.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>JCezoo8Lw4nExrQCeETI40Y/pKT6TKn7DzN8mFxUaIQ=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fsphere.bmp">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>f/3cVAglDmAhCnCZkg00pSYk23HTQA3goV0qLREuiFE=</DigestValue>
+</Reference>
 <Reference URI="res%2Ftex%2Ftex_c_brick.bmp">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>KiwEH35YFwnFau3Ftd3Iqn18ugl51h+5ljApSJidFVU=</DigestValue>
@@ -115,11 +139,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-FKWGLvnrdQ5YtXjZd+hFSMQpsf9Pa1nyIvUgup02jome4qjEKV9gLq+4c3PjYExfGw3R5OxeqekS
-rX4rDMoNgPQhHgOVGxThVzko1GQEXNdLQhSDw/ug5rEMzW/RuxBvVL3X5QakMK52U/UK9ontURVG
-kEOX0VTlj0eJDk68mjSTGbU4/WJYdKkwkKkNQln/qeCqMatMG+9XicuZHHXisasROfcoHrURI0yu
-uR80zLRm2HUqpqiEF4yBU6KrboXBxi2yF7k+++980V5ruvvSOoVZCcNl5PxSUVo/N+GUZg/uhbDI
-Fbftkpa93MhVVvzl41LoaPW/UwGWZAj+N+Rx2Q==
+bjhLc8cugsrxqxvbdi6TfyaTDc94NcOcjZFO1tpdr9S8+jNuIWjMSH/lybXsCZUOrPzeDu2E6V74
+0ueonR+JBzMI/sockYoAJMbB41P+8Moz7cSsB/OaLsiFkrfV4MF46dpGwkktdauT1dAkuep3JVK+
+BYyMj1BbT6Sc5rMJIsGCAhLwW32Tt3RGnJQKIogak3FU9EeD6sMRrJ0y8f3odgAr1S/unXcCXg/Q
+kxnB0YJ0/ygkXgzZcygPDQhNwx0UzbJjuDzvEdxyrrVtIYKJaoKFsGB1oxmHAkVlT5NkJLofErZw
+SOV6ZXRh88NgfqeSuZyKk8XEygt1O690oH91ig==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

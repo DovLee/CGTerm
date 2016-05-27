@@ -2,6 +2,7 @@
 
 #include "basic/basic_file_loader.h"
 
+
 using namespace std;
 
 void FragLightingView::OnInit()
@@ -10,19 +11,19 @@ void FragLightingView::OnInit()
 	string fs = FileLoader::GetInstance()->ReadTxtFile("shader/view_f_lit/f_lit.fs");
 	mViewRenderer->SetProgram(vs, fs);
 
-	string teapot = FileLoader::GetInstance()->ReadTxtFile("obj3d/teapot");
+	string teapot = FileLoader::GetInstance()->ReadTxtFile("obj3d/sphere3");
 
 	TexData textJ;
-	FileLoader::GetInstance()->ReadTexture("tex/tex_c_brick.bmp", textJ);
+	FileLoader::GetInstance()->ReadTexture("tex/soccer.jpg", textJ);
 
-	float scale = 1.0f;
+	float scale = 4.0f;
 	mViewRenderer->SetNewModel(teapot, scale);
 	mViewRenderer->SetTexture(TEXDATA_GENERAL, &textJ);
 
 	mViewRenderer->Initialize();
 	glClearColor(0.1f, 0.1f, 0.3f, 0.0f);
 
-	mViewRenderer->GetCamera()->SetEye(25, 25, 25);
+	mViewRenderer->GetCamera()->SetEye(0, 0, 75);
 	mViewRenderer->GetCamera()->SetAt(0, 0, 0);
 }
 

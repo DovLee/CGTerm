@@ -42,8 +42,22 @@ accelerometer_cb(sensor_h sensor, sensor_event_s *event, void *data)
 	// Renderer->GetCamera()->RotateAuto(double(gyr_x/10));
 	// Renderer->GetCamera()->MoveLeft(double(gyr_y));
 
-    Renderer->SetTouchPoint(static_cast<float>(gyr_x * (-36) + 360), static_cast<float>(gyr_y * 56.5 + 565));
 
+	Renderer->SetTouchPoint(static_cast<float>(gyr_x * (-36) + 360), static_cast<float>(gyr_y * 56.5 + 565));
+	/*
+	if(gyr_x < -1){
+
+		for(int i=0; i<5; i++){
+
+			temp_x += gyr_x + i;
+			temp_y += gyr_y + i;
+			Renderer->SetTouchPoint(static_cast<float>(temp_x * (-36) + 360), static_cast<float>(temp_y * 56.5 + 565));
+		}
+	}
+	else {
+		Renderer->SetTouchPoint(static_cast<float>(gyr_x * (-36) + 360), static_cast<float>(gyr_y * 56.5 + 565));
+	}
+	*/
 }
 
 

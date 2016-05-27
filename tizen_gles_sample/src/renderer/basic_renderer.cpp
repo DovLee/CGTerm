@@ -588,7 +588,7 @@ mat4 BasicRenderer::GetWorldMatrix() const
 				vec3 vb = GetArcballVector(mTouchPoint);
 
 				// Get the rotation axis and the angle between the vector
-				float angle = acos(glm::min(1.0f, dot(va, vb))) * 20.0f;
+				float angle = acos(glm::min(1.0f, dot(va, vb))) * 25.0f;
 
 				LOGI("Angle  (%f)\n", angle);
 
@@ -609,7 +609,7 @@ mat4 BasicRenderer::GetWorldMatrix() const
 		isUpdateAnc = false;
 	}
 
-	mat4 rotationMat = mat4_cast(lastRotQuat);
+	mat4 rotationMat = mat4(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15+(mTouchPoint.x-360)/12, -15+(mTouchPoint.y-565)/(-56.5/3), 0, 1) * mat4_cast(lastRotQuat);
 
 	return rotationMat;
 }
