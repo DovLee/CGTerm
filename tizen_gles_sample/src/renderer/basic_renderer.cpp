@@ -566,6 +566,12 @@ mat4 BasicRenderer::GetWorldMatrix() const
 	static vec2 ancPts = mTouchPoint;	//mTouchPoint
 	static bool isUpdateAnc = false;
 
+	if (!isUpdateAnc){
+		LOGI("isUpdateAnc false\n");
+	} else {
+		LOGI("isUpdateAnc true\n");
+	}
+
 	if (!mIsTouchOn)
 	{
 		if (!isUpdateAnc)
@@ -599,6 +605,7 @@ mat4 BasicRenderer::GetWorldMatrix() const
 
 				quat curRotQuat = angleAxis(angle, axisInObjectSpace);
 				lastRotQuat = normalize(curRotQuat * startRotQuat);
+
 
 			}
 		}

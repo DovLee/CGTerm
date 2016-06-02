@@ -1,8 +1,8 @@
 src/renderer/platform/common/basic_file_loader.o: \
   ../src/renderer/platform/common/basic_file_loader.cpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\basic/basic_file_loader.h \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\basic/basic_texdata.h \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\basic/basic_gl_set.h \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_file_loader.h \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_texdata.h \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_gl_set.h \
   C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary_GL_Helpers.h \
   C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary.h \
   C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/efl-1\Efl_Config.h \

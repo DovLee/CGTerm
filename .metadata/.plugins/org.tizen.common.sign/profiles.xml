@@ -4,4 +4,8 @@
 <profileitem ca="" distributor="0" key="C:\tizen-sdk-data\keystore\Enjoymaa\author.p12" password="gdK3Bw2ApIs=" rootca=""/>
 <profileitem ca="" distributor="1" key="C:\tizen-sdk-data\keystore\Enjoymaa\distributor.p12" password="gdK3Bw2ApIs=" rootca=""/>
 </profile>
+<profile name="jangg">
+<profileitem ca="" distributor="0" key="C:\tizen-sdk-data\keystore\jangg\author.p12" password="XXJ+JCnScdM=" rootca=""/>
+<profileitem ca="" distributor="1" key="C:\tizen-sdk-data\keystore\jangg\distributor.p12" password="XXJ+JCnScdM=" rootca=""/>
+</profile>
 </profiles>

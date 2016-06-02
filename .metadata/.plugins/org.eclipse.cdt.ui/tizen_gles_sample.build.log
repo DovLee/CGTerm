@@ -1,11 +1,24 @@
-23:21:24 **** Incremental Build of configuration Debug for project tizen_gles_sample ****
+15:06:29 **** Build of configuration Debug for project tizen_gles_sample ****
 ninja all 
-[1/2] Building src/renderer/basic_renderer.o
-In file included from ../src/renderer/basic_renderer.cpp:5:
+[1/17] Building src/sample/launcher_interface.o
+[2/17] Building src/sample/sample_view.o
+[3/17] Building src/renderer/platform/common/basic_file_loader.o
+[4/17] Building src/sample/normal_mapping_view.o
+[5/17] Building src/sample/sample_launcher.o
+[6/17] Building src/renderer/platform/win/basic_file_loader_win.o
+[7/17] Building src/renderer/platform/tizen/basic_file_loader_tizen.o
+[8/17] Building src/sample/frag_lighting_view.o
+[9/17] Building src/sample/coloring_view.o
+[10/17] Building src/gles_sample.o
+[11/17] Building src/renderer/basic_shader.o
+[12/17] Building src/renderer/basic_renderer.o
+In file included from ../src/renderer/platform/common/basic_file_loader.cpp:1:
 
-In file included from C:/Users/Culture/Project Workspace/tizen_gles_sample/inc\basic/basic_renderer.h:6:
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_file_loader.h:6:
 
-In file included from C:/Users/Culture/Project Workspace/tizen_gles_sample/inc\basic/basic_gl_set.h:15:
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_texdata.h:4:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_gl_set.h:15:
 
 In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary_GL_Helpers.h:10:
 
@@ -21,7 +34,253 @@ struct _Elm_Prefs_Item_Spec_Void
 
 1 warning generated.
 
-[2/2] Linking tizen_gles_sample
+[13/17] Building src/renderer/basic_timer.o
+[14/17] Building src/renderer/basic_camera.o
+In file included from ../src/sample/sample_launcher.cpp:1:
 
-23:21:28 Build Finished (took 3s.745ms)
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\sample/sample_launcher.h:4:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\sample/sample_view.h:4:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_renderer.h:6:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_gl_set.h:15:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary_GL_Helpers.h:10:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary.h:169:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\elm_prefs.h:71:
+
+C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1/elm_prefs_common.h:34:1: warning: struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+
+struct _Elm_Prefs_Item_Spec_Void
+
+^
+
+1 warning generated.
+
+[15/17] Building src/renderer/basic_texdata.o
+In file included from ../src/sample/coloring_view.cpp:1:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\sample/coloring_view.h:4:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\sample/sample_view.h:4:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_renderer.h:6:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_gl_set.h:15:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary_GL_Helpers.h:10:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary.h:169:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\elm_prefs.h:71:
+
+C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1/elm_prefs_common.h:34:1: warning: struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+
+struct _Elm_Prefs_Item_Spec_Void
+
+^
+
+1 warning generated.
+
+[16/17] Building src/renderer/basic_utils.o
+In file included from ../src/sample/frag_lighting_view.cpp:1:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\sample/frag_lighting_view.h:4:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\sample/sample_view.h:4:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_renderer.h:6:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_gl_set.h:15:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary_GL_Helpers.h:10:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary.h:169:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\elm_prefs.h:71:
+
+C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1/elm_prefs_common.h:34:1: warning: struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+
+struct _Elm_Prefs_Item_Spec_Void
+
+^
+
+1 warning generated.
+
+In file included from ../src/sample/launcher_interface.cpp:1:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\sample/launcher_interface.h:4:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary.h:169:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\elm_prefs.h:71:
+
+C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1/elm_prefs_common.h:34:1: warning: struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+
+struct _Elm_Prefs_Item_Spec_Void
+
+^
+
+1 warning generated.
+
+In file included from ../src/sample/normal_mapping_view.cpp:1:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\sample/normal_mapping_view.h:4:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\sample/sample_view.h:4:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_renderer.h:6:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_gl_set.h:15:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary_GL_Helpers.h:10:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary.h:169:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\elm_prefs.h:71:
+
+C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1/elm_prefs_common.h:34:1: warning: struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+
+struct _Elm_Prefs_Item_Spec_Void
+
+^
+
+1 warning generated.
+
+In file included from ../src/sample/sample_view.cpp:1:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\gles_sample.h:21:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary.h:169:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\elm_prefs.h:71:
+
+C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1/elm_prefs_common.h:34:1: warning: struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+
+struct _Elm_Prefs_Item_Spec_Void
+
+^
+
+1 warning generated.
+
+In file included from ../src/renderer/platform/tizen/basic_file_loader_tizen.cpp:4:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary.h:169:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\elm_prefs.h:71:
+
+C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1/elm_prefs_common.h:34:1: warning: struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+
+struct _Elm_Prefs_Item_Spec_Void
+
+^
+
+1 warning generated.
+
+In file included from ../src/renderer/basic_shader.cpp:7:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_shader.h:5:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_gl_set.h:15:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary_GL_Helpers.h:10:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary.h:169:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\elm_prefs.h:71:
+
+C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1/elm_prefs_common.h:34:1: warning: struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+
+struct _Elm_Prefs_Item_Spec_Void
+
+^
+
+1 warning generated.
+
+In file included from ../src/renderer/basic_utils.cpp:1:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_utils.h:4:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_gl_set.h:15:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary_GL_Helpers.h:10:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary.h:169:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\elm_prefs.h:71:
+
+C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1/elm_prefs_common.h:34:1: warning: struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+
+struct _Elm_Prefs_Item_Spec_Void
+
+^
+
+1 warning generated.
+
+In file included from ../src/renderer/basic_camera.cpp:4:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_utils.h:4:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_gl_set.h:15:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary_GL_Helpers.h:10:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary.h:169:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\elm_prefs.h:71:
+
+C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1/elm_prefs_common.h:34:1: warning: struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+
+struct _Elm_Prefs_Item_Spec_Void
+
+^
+
+1 warning generated.
+
+In file included from ../src/renderer/basic_texdata.cpp:3:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_texdata.h:4:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_gl_set.h:15:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary_GL_Helpers.h:10:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary.h:169:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\elm_prefs.h:71:
+
+C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1/elm_prefs_common.h:34:1: warning: struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+
+struct _Elm_Prefs_Item_Spec_Void
+
+^
+
+1 warning generated.
+
+In file included from ../src/renderer/basic_renderer.cpp:5:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_renderer.h:6:
+
+In file included from C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_gl_set.h:15:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary_GL_Helpers.h:10:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary.h:169:
+
+In file included from C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\elm_prefs.h:71:
+
+C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1/elm_prefs_common.h:34:1: warning: struct has size 0 in C, size 1 in C++ [-Wextern-c-compat]
+
+struct _Elm_Prefs_Item_Spec_Void
+
+^
+
+1 warning generated.
+
+[17/17] Linking tizen_gles_sample
+
+15:06:36 Build Finished (took 6s.510ms)
 

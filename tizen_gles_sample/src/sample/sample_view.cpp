@@ -1,8 +1,8 @@
 #include "gles_sample.h"
 #include "sample/sample_view.h"
 
-float gyr_x;
-float gyr_y;
+float gyr_x2;
+float gyr_y2;
 BasicRenderer* Renderer;
 
 ELEMENTARY_GLVIEW_GLOBAL_DEFINE()
@@ -36,14 +36,38 @@ accelerometer_cb(sensor_h sensor, sensor_event_s *event, void *data)
 {
 	LOGI("Sensor X, Y, Z (%f, %f, %f)\n", (float)event->values[0], (float)event->values[1], (float)event->values[2]);
 
-	gyr_x = (float)event->values[0];
-	gyr_y = (float)event->values[1];
+
+	static float gyr_x1 = (float)event->values[0];
+	static float gyr_y1 = (float)event->values[1];
+
+	gyr_x2 = (float)event->values[0];
+	gyr_y2 = (float)event->values[1];
+if(gyr_x2 > 0)
+	if((gyr_x2 - gyr_x1) > 0){
+		Renderer->SetTouchPoint(static_cast<float>(gyr_x2 * (-36) + 360), static_cast<float>(gyr_y2 * 56.5 + 565));
+		gyr_x1 = gyr_x2;
+	}
+	else {
+		Renderer->SetTouchPoint(static_cast<float>(gyr_x1 * (-36) + 360), static_cast<float>(gyr_y1 * 56.5 + 565));
+	}
+else {
+	if((gyr_x2 - gyr_x1) < 0){
+			Renderer->SetTouchPoint(static_cast<float>(gyr_x2 * (-36) + 360), static_cast<float>(gyr_y2 * 56.5 + 565));
+			gyr_x1 = gyr_x2;
+		}
+		else {
+			Renderer->SetTouchPoint(static_cast<float>(gyr_x1 * (-36) + 360), static_cast<float>(gyr_y1 * 56.5 + 565));
+		}
+}
+	LOGI("GYR1 X, Y (%f, %f)\n", gyr_x1, gyr_y2);
+	LOGI("GYR2 X, Y (%f, %f)\n", gyr_x2, gyr_y2);
+
 
 	// Renderer->GetCamera()->RotateAuto(double(gyr_x/10));
 	// Renderer->GetCamera()->MoveLeft(double(gyr_y));
 
 
-	Renderer->SetTouchPoint(static_cast<float>(gyr_x * (-36) + 360), static_cast<float>(gyr_y * 56.5 + 565));
+	// Renderer->SetTouchPoint(static_cast<float>(gyr_x * (-36) + 360), static_cast<float>(gyr_y * 56.5 + 565));
 	/*
 	if(gyr_x < -1){
 

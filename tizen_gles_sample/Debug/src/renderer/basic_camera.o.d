@@ -1,91 +1,91 @@
 src/renderer/basic_camera.o: ../src/renderer/basic_camera.cpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/quaternion.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../glm.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/_fixes.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../fwd.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_int.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/setup.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_float.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_vec.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/precision.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../vec2.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_vec2.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_vec2.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../vec3.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_vec3.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_vec3.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../vec4.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_vec4.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_vec4.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../mat2x2.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat2x2.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat2x2.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../mat2x3.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat2x3.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat2x3.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../mat2x4.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat2x4.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat2x4.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../mat3x2.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat3x2.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat3x2.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../mat3x3.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat3x3.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat3x3.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../mat3x4.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat3x4.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat3x4.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../mat4x2.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat4x2.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat4x2.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../mat4x3.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat4x3.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat4x3.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../mat4x4.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat4x4.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_mat4x4.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../trigonometric.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_trigonometric.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_trigonometric.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/_vectorize.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_vec1.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_vec1.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../exponential.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_exponential.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_exponential.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_vector_relational.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_vector_relational.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../common.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_common.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_common.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../packing.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_packing.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_packing.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_half.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/type_half.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../geometric.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_geometric.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_geometric.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../matrix.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_matrix.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_matrix.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../vector_relational.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../integer.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_integer.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../detail/func_integer.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../gtc/constants.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../gtc/constants.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../gtc/quaternion.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../gtc/quaternion.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../gtx/norm.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/norm.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/quaternion.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\basic/basic_camera.h \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtc/matrix_transform.hpp \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\glm/gtx/../gtc/matrix_transform.inl \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\basic/basic_utils.h \
-  C:/Users/Culture/Project\ Workspace/tizen_gles_sample/inc\basic/basic_gl_set.h \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/quaternion.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../glm.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/_fixes.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../fwd.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_int.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/setup.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_float.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_vec.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/precision.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../vec2.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_vec2.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_vec2.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../vec3.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_vec3.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_vec3.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../vec4.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_vec4.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_vec4.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../mat2x2.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat2x2.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat2x2.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../mat2x3.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat2x3.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat2x3.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../mat2x4.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat2x4.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat2x4.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../mat3x2.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat3x2.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat3x2.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../mat3x3.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat3x3.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat3x3.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../mat3x4.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat3x4.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat3x4.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../mat4x2.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat4x2.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat4x2.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../mat4x3.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat4x3.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat4x3.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../mat4x4.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat4x4.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_mat4x4.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../trigonometric.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_trigonometric.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_trigonometric.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/_vectorize.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_vec1.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_vec1.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../exponential.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_exponential.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_exponential.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_vector_relational.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_vector_relational.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../common.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_common.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_common.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../packing.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_packing.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_packing.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_half.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/type_half.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../geometric.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_geometric.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_geometric.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../matrix.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_matrix.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_matrix.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../vector_relational.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../integer.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_integer.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../detail/func_integer.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../gtc/constants.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../gtc/constants.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../gtc/quaternion.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../gtc/quaternion.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../gtx/norm.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/norm.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/quaternion.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_camera.h \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtc/matrix_transform.hpp \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\glm/gtx/../gtc/matrix_transform.inl \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_utils.h \
+  C:/Users/Windows10/Documents/GitHub/CGTerm/tizen_gles_sample/inc\basic/basic_gl_set.h \
   C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary_GL_Helpers.h \
   C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/elementary-1\Elementary.h \
   C:/tizen-sdk/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/include/efl-1\Efl_Config.h \

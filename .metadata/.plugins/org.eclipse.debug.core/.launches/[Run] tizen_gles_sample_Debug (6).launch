@@ -20,7 +20,7 @@
 <listEntry value="4"/>
 </listAttribute>
 <booleanAttribute key="org.tizen.common.launch.device.emulator" value="false"/>
-<stringAttribute key="org.tizen.common.launch.device.id" value="0000ec6600001300"/>
+<stringAttribute key="org.tizen.common.launch.device.id" value="0000dac700001300"/>
 <stringAttribute key="org.tizen.nativeapp.launch.PROJECT_BUILD_CONFIG_NAME_ATTR" value="Debug"/>
 <stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
 </launchConfiguration>
