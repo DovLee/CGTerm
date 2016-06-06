@@ -15,7 +15,7 @@ void FragLightingView::OnInit()
 
 	TexData textJ;
 	//FileLoader::GetInstance()->ReadTexture("tex/soccer.jpg", textJ);
-	FileLoader::GetInstance()->ReadTexture("tex/photosculpt-autumnleaves-diffuse.jpg", textJ);
+	FileLoader::GetInstance()->ReadTexture("tex/photosculpt-graystonewall-diffuse.jpg", textJ);
 
 	float scale = 4.0f;
 	mViewRenderer->SetNewModel(teapot, scale);
