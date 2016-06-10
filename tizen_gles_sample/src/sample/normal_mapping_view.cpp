@@ -10,23 +10,17 @@ void NormalMappingView::OnInit()
 	string fs = FileLoader::GetInstance()->ReadTxtFile("shader/view_nor/nor.fs");
 	mViewRenderer->SetProgram(vs, fs);
 
-	//string teapot = FileLoader::GetInstance()->ReadTxtFile("obj3d/teapot");
-	string teapot = FileLoader::GetInstance()->ReadTxtFile("obj3d/sphere3");
+	string teapot = FileLoader::GetInstance()->ReadTxtFile("obj3d/teapot");
 
-	TexData tex, normal_tex, height_tex;
-	//FileLoader::GetInstance()->ReadTexture("tex/tex_c_brick.bmp", tex);
-	//FileLoader::GetInstance()->ReadTexture("tex/tex_n_brick.bmp", normal_tex);
-	FileLoader::GetInstance()->ReadTexture("tex/photosculpt-graystonewall-diffuse.jpg", tex);
-	FileLoader::GetInstance()->ReadTexture("tex/photosculpt-graystonewall-normal.jpg", normal_tex);
-	FileLoader::GetInstance()->ReadTexture("tex/photosculpt-graystonewall-ambientocclusion.jpg", height_tex);
-
+	TexData tex, normal_tex;
+	FileLoader::GetInstance()->ReadTexture("tex/tex_c_brick.bmp", tex);
+	FileLoader::GetInstance()->ReadTexture("tex/tex_n_brick.bmp", normal_tex);
 
 	float scale = 1.0f;
 	mViewRenderer->SetNewModel(teapot, scale);
 	mViewRenderer->SetTexture(TEXDATA_GENERAL, &tex);
 	mViewRenderer->SetTexture(TEXDATA_NORMAL_MAP, &normal_tex);
-	mViewRenderer->SetTexture(TEXDATA_HEIGHT_MAP, &height_tex);
-	
+
 	mViewRenderer->Initialize();
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 
