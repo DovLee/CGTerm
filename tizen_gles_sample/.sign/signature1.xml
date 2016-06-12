@@ -4,11 +4,11 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>+rehAX/oaLoh28xXAy25yV76F97QAUdw30IAw0WGSMM=</DigestValue>
+<DigestValue>p4JEqCeQEkXEiVOjpjYGMjPqO3kAGgfvPQwoHsoELUM=</DigestValue>
 </Reference>
 <Reference URI="bin%2Ftizen_gles_sample">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>tK2idK9I1X34E+6QDsAo9wutu0GhClyrPiUzxbBDNkU=</DigestValue>
+<DigestValue>Ud2+QS+mkvaQp1SMtuhpWbjG+IAvz7SJUv52Piqu6Io=</DigestValue>
 </Reference>
 <Reference URI="res%2Fobj3d%2Fball">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -94,6 +94,110 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>Akd1pvKXkhnhqw1gCYlN6JILHFpsrTbmqdcJmOxqRrI=</DigestValue>
 </Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-autumnleaves-ambientocclusion.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>c89q58ACwpU2T96NqFVSR+YaUP8n10sRLRH0lzGTpVU=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-autumnleaves-diffuse.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>faBOGc6M9pfBwk/URURTFcY2FXt/L/t8t48wghyrgiY=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-autumnleaves-normal.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>FiqoLnykaML0qs5ueiPeMtJEtcsUH3/Zogz9bdRMAuc=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-creeper-ambientocclusion.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>wBcgHY4sOSBuY/iKSD1DmkA6JxmNzk9zv6nxERQmLNo=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-creeper-diffuse.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>wJ3yh4WbcshqtFJn/q9TFE64BN6dP4uWqaqJ4fJUQbc=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-creeper-normal.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>+rtxJ11gjA4vEQCcoiwnJkyCliooCxNivvmYfELcdLw=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-graystonewall-ambientocclusion.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>PXMS4TWd9p5aD/beqXks99YEOAxoEPUq8tJhYV2H4CY=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-graystonewall-diffuse.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>Fa5vQEPhT9pqZif7CwIO7Kxvu6IMkBq/3pX4fZJpu4k=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-graystonewall-normal.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>Tbhi69afufbUCRWr9f1fyvjUBiFB0Fj4mg08TNGKLwI=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-horizontalstone-ambientocclusion.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>NYypjIgOKSWdcYKWE8iMpCDK6+/bF9z3la5IlWkE3E4=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-horizontalstone-diffuse.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>tGEVjOmRwjchS4IiK4RON80u7obexdLfz0tAhbtNBKY=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-horizontalstone-normal.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>35Cf/GUyfqj4GsCycQJ+frtByxTlfK6ZYMzr75AUx/Q=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-mixedstones-ambientocclusion.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>jQ2xDAvAXADzbt674ieI9e4VbRODMZ1TO9GiuKfGQ1A=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-mixedstones-diffuse.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>F1nhyhs49jeTFI+9loVvu27yy8W6qN8ZVjebvLvaXig=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-mixedstones-normal.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>Uq0oN8b6fHUWbMAgd3ALEXN68fpn+ToQvA0792JgyiM=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-mud-ambientocclusion.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>mawsRHIbEMGOjcSje5gsqWTaa5ZiOiHCNejZThmUueE=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-mud-diffuse.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>nalLn6qxb08cXZRFCexLZ6Crlqx/CfvAMw3pUlPiQHQ=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-mud-normal.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>qBqqS/jK41IHZFCBCtOTJnDHh7LNJCxPrfhdxUhtMoc=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-orangestonewall-ambientocclusion.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>BJTvzivKP8OQfjlbzowh3CjM+k41hmaaHiCEMQWEMBY=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-orangestonewall-diffuse.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>OFPl9MnaRb7M6IEli9iVpgop5xSWTadIatjdsQmnSro=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-orangestonewall-normal.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>X0PBkfWgSqW1iBCTXyqwjA80gMss7iXvTEpfSxL8MZQ=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-pebbles-ambientocclusion.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>ljvzQeuA/Sbt3BcjejGXitfUejnpNqWRj2otq1BrUEY=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-pebbles-diffuse.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>PuJNTCWWP1m6tS9jGB/BE2PlhNo4EXaV3P5W8vVyehU=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-pebbles-normal.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>di1HSb6389e86dQY+QY1h7NBKwjHKc4XH66Nv0nyUcA=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-squarebricks-diffuse.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>G5B8+FRKMRHUMCuGxSN491dYWYgnOILMVXNSrN+bJtI=</DigestValue>
+</Reference>
+<Reference URI="res%2Ftex%2Fphotosculpt-squarerock-diffuse.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>OzhnadjWmjZu6taXtzILgg5iZz+VTp1S0HLWCmxCh5g=</DigestValue>
+</Reference>
 <Reference URI="res%2Ftex%2Fsoccer.jpg">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>JCezoo8Lw4nExrQCeETI40Y/pKT6TKn7DzN8mFxUaIQ=</DigestValue>
@@ -143,11 +247,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-BguHow0A7cDcajGRMpXtEqug39H+ci202I3gbFOYbt6W/pcn947FavclQM7OMY/2ffBhI9dk8sWE
-N2OMnzNenwSXPpB3O6yVMRQHRfS2IEfKneT5X5aRCjGUp6cimwtEL/ZgUxwW2cbfuzoAkCqmKRmO
-TZd5EQ3kXZ2SabOK7Q8iIRiss8O6NRKlGYqY99N/8oeISv8ArFBxQ9kdHyv2TtFcqUanx+qwk6sZ
-4Tju2z1ySuYuL7SCMqLaAQ5u7/s9bgidJqaL+/DkRgcgYnKv4MC29qCn7VJ6vQU7Q5pzYIoqhvCT
-mH1z42nIDnech6oX3BLdzI03oeFqyNIobxiq0A==
+edITExQ0A35iGyfgfVqZrGay+X2T6rCgVsD1XiMxNKB8FQsio6SUe8PQJGhGd/NckszTHB3Xx7uH
+ofUU2ZQW50X4LByAiFZkb5vbUJsapTO53wBP8DdVbfoqMxxdraXWqiWLRBd9uqOXSUBDewCfoyDx
+K7hWcX94dYQlwPLCrjOB1JzFbBMMludyBKBkk7YXwlIOQ4gXePMrtYiPnYAtBUfOeKOMFgD7OL3M
+QMiz+k8bcKGNLvQ9K5Yc+XDHC0IyqISazd3qAL0pGrSUU1zVyIkOB6g6Nr+ykoinKDoeRJ6/56G7
+ZGPHGaSey3v2eOdvvGqCxEesbE3YrnmCS7CFzQ==
 </SignatureValue>
 <KeyInfo>
 <X509Data>
@@ -155,20 +259,20 @@ mH1z42nIDnech6oX3BLdzI03oeFqyNIobxiq0A==
 MIIDpDCCAoygAwIBAgIBZTANBgkqhkiG9w0BAQsFADCBnjELMAkGA1UEBhMCS1IxFDASBgNVBAgM
 C1NvdXRoIEtvcmVhMQ4wDAYDVQQHDAVTdXdvbjEmMCQGA1UECgwdU2Ftc3VuZyBFbGVjdHJvbmlj
 cyBDby4sIEx0ZC4xDzANBgNVBAsMBk1vYmlsZTEwMC4GA1UEAwwnU2Ftc3VuZyBUaXplbiBERVZF
-TE9QRVIgUHVibGljIENBIENsYXNzMB4XDTE2MDYwMTAzNDEyMloXDTE3MDYwMTAzNDEyMlowcDER
+TE9QRVIgUHVibGljIENBIENsYXNzMB4XDTE2MDUyNTE4MDA1NVoXDTE3MDUyNTE4MDA1NVowcDER
 MA8GA1UEAwwIVGl6ZW5TREsxCTAHBgNVBAsMADEJMAcGA1UECgwAMQkwBwYDVQQHDAAxCTAHBgNV
-BAgMADEJMAcGA1UEBhMAMSQwIgYJKoZIhvcNAQkBFhV3a2Rhbmx3bzA5MUBnbWFpbC5jb20wggEi
-MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDDt1qKBzZPLXB412rPi6epEFDxip/5LrkzcjGq
-mq8mJBJsIe6WduSCFIhD6qgP/PRXvyaBsqGSONEoz4VNPCbHyM8EDUSZNxUYbXeSSS7JH/K1yJou
-NvIhvxM8KiSrZhKrwh7IIvBNCyuaXWK/pUD6l5nzpPEj3OK63pCkdP0gTP7a18HmwqeEkEyCK7Vi
-Fm4eDJGlRnPgRHbDK6N/orGuYleCcfGDH5fs1/jUvuE7DnlzFxzWsC67SX9UPkn1tUdtPVx6zjlx
-6BuKzNbB0ZKpvC0av0qazrCSXe7oXdakJiesBKbK1NdBJhc14w1kqwllntri6VL5efWuB6okBFxr
-AgMBAAGjGjAYMAkGA1UdEwQCMAAwCwYDVR0PBAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQBNRoKw
-A4EFg9oxBHNFFPhegaTBZmgsQr32ORVwfoAl6TSKNFq1OLgWrOVx84xOpmyoRD7xp/6wCC8c4U9A
-n0hDFFNI7nYEeMQ9W+qB34719qWBhGsJB5C3/Y0y4gOqjutrPNJqYzaTelUuZ3gHxROx+1TjLdud
-f1huxmZtOctoNCZy5PcKX9VCEWlUqAT9miB1Dx9Q7NJvieViSR+JH4GQjTC7PsZ335+Tci2KcTbr
-nVLEXupXbrm2dDNOyColNbTtu/6a3gU4VY7GOO2jo51hWo9zISt+GZKFMWm0fwwN8CX2tg5d1fLX
-dAK9wQx8nI+TTmyz36DOLbgfW0CzXfVM
+BAgMADEJMAcGA1UEBhMAMSQwIgYJKoZIhvcNAQkBFhVtX3NveW9sMjAwN0B5YWhvby5jb20wggEi
+MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC2h+swAlzBselS95VQ3uFn/0h6tz153nlKdryn
+UyLCMlxIGAVCUQ6rLJ7uhRlwhYz8E33Gw/sYoN0idVgOstStbxjaH42S+SDL/69UGbCEpX3eLuLZ
+J5sNW29FiMob0I2xA8pzQEay+EEq50KGKDFQNcgYut8tHpjjre/d8BB64aGSnT8tyIfuVfqGXT0t
+o3979ILNXORvqC8UVgCaflzEpJOghKWcRawv4ENaK1P9sFvhlwvaSYU3frBdEyJ45g6UITvH54Q2
+C1DNcNzJUaQ5u/IAVE9t67fzmXNNxEbXSi9Kn6ZOyABcR7pzXS072XlQO0NwhVncDkUGcTB/wzjF
+AgMBAAGjGjAYMAkGA1UdEwQCMAAwCwYDVR0PBAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQAqJBwP
+qkbEH+yoR/pm79AQHGeEPCWC0b+lJhyvyEk0toyPnNBTCMp7idBeV5rsflOBX2RF6+tfsL4QEYGO
+HiCNhy0w/s/vq1cvOTJyoul2eBEGHNmjJCTL2xnAjn5NIrHXbLJKTxa0ffNg4HDwyykMhx6Tp2z0
+YcNRAX+LL5G4lVC4Y6VqCtgPsiwq6xZ2yCnP9AcOJHUH7bHa2KrOcrSYqib/dOUVRuc6oREf/74F
+uOivnRtY/EF8zFOu2xX1HWw/F31ndU2KH6+MGpEvoFMT1Noph5FYKB6urORuTvYytI5nwAlJMpPU
+2XYKSVgCciE0kY6uno5YyWg4v0zEdbKT
 </X509Certificate>
 <X509Certificate>
 MIIDuzCCAqOgAwIBAgICL+cwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNVBAYTAktSMRQwEgYDVQQI

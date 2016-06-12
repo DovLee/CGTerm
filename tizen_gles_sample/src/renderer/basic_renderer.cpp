@@ -6,6 +6,10 @@
 
 using namespace std;
 using namespace glm;
+float velocity_x = 0;
+float velocity_y = 0;
+float position_x = 0;
+float position_y = 0;
 
 BasicRenderer::BasicRenderer() :
 	mWidth(0),
@@ -348,7 +352,7 @@ void BasicRenderer::PassUniform() const
 	mShader->SetUniform("s_texNor", TEX_POS_NORMAL);
 	mShader->SetUniform("s_texCube", TEX_POS_CUBEMAP);
 	mShader->SetUniform("eyePos", mCamera->GetEye());
-	mShader->SetUniform("lightPos", vec3(50.0f, 50.0f, 50.0f));
+	mShader->SetUniform("lightPos", vec3(100.0f, 100.0f, 100.0f));
 	mShader->SetUniform("materialDiff", vec3(0.8f, 1.0f, 0.7f));
 	mShader->SetUniform("materialSpec", vec3(0.8f, 1.0f, 0.7f));
 	mShader->SetUniform("materialAmbi", vec3(0.0f, 0.0f, 0.0f));
@@ -545,16 +549,16 @@ vec3 BasicRenderer::GetArcballVector(const vec2& point) const
 {
 	const float RADIUS = 1.0;
 
+	LOGI("width, height (%f, %f)\n",  mWidth,  mHeight);
+
 	vec3 P = vec3(1.0 * point.x / mWidth * 2 - 1.0,
 	              1.0 * point.y / mHeight * 2 - 1.0,
 	              0);
 	P.y = -P.y;
 
 	float OP_squared = P.x * P.x + P.y * P.y;
-	if (OP_squared <= RADIUS * RADIUS)
-		P.z = sqrt(RADIUS * RADIUS - OP_squared); // Pythagore
-	else
-		P = glm::normalize(P); // nearest point
+
+	P.z = sqrt(RADIUS * RADIUS - OP_squared); // Pythagore
 
 	return P;
 }
@@ -566,11 +570,6 @@ mat4 BasicRenderer::GetWorldMatrix() const
 	static vec2 ancPts = mTouchPoint;	//mTouchPoint
 	static bool isUpdateAnc = false;
 
-	if (!isUpdateAnc){
-		LOGI("isUpdateAnc false\n");
-	} else {
-		LOGI("isUpdateAnc true\n");
-	}
 
 	if (!mIsTouchOn)
 	{
@@ -580,12 +579,42 @@ mat4 BasicRenderer::GetWorldMatrix() const
 			isUpdateAnc = true;
 			LOGI("Anchor Updated\n");
 			LOGI("Anchor X, Y (%f, %f)\n",  ancPts.x,  ancPts.y);
-
 		}
 		else
 		{
 			if (ancPts.x != mTouchPoint.x || ancPts.y != mTouchPoint.y)
 			{
+
+				if( fabs(velocity_x * (1 - 0.05) ) >= 0){
+					    velocity_x *= (1 - 0.05);
+				} else {
+						velocity_x = 0;
+
+				}
+
+
+				if( (position_x - velocity_x) <= 265 && (position_x - velocity_x) >= -265){
+						velocity_x +=  (mTouchPoint.x - 360)/(-36.0*3);
+				}
+				else {
+						velocity_x = -velocity_x*1.2;
+				}
+
+
+				if( fabs(velocity_y * (1 - 0.05) ) >= 0){
+						velocity_y *= (1 - 0.05);
+				} else {
+						velocity_y = 0;
+				}
+
+
+				if( (position_y - velocity_y) <= 435 && (position_y - velocity_y) >= -430){
+						velocity_y +=  (mTouchPoint.y - 565)/(56.5*3);
+				}
+				else {
+						velocity_y = -velocity_y*1.2;
+
+				}
 
 
 				LOGI("Darsan X, Y (%f, %f)\n",  mTouchPoint.x,  mTouchPoint.y);
@@ -594,9 +623,8 @@ mat4 BasicRenderer::GetWorldMatrix() const
 				vec3 vb = GetArcballVector(mTouchPoint);
 
 				// Get the rotation axis and the angle between the vector
-				float angle = acos(glm::min(1.0f, dot(va, vb))) * 25.0f;
 
-				LOGI("Angle  (%f)\n", angle);
+				float angle = acos(glm::min(1.0f, dot(va, vb))) * 2.0f;
 
 				vec3 axisInCameraSpace = normalize(cross(va, vb));
 
@@ -605,7 +633,6 @@ mat4 BasicRenderer::GetWorldMatrix() const
 
 				quat curRotQuat = angleAxis(angle, axisInObjectSpace);
 				lastRotQuat = normalize(curRotQuat * startRotQuat);
-
 
 			}
 		}
@@ -616,7 +643,13 @@ mat4 BasicRenderer::GetWorldMatrix() const
 		isUpdateAnc = false;
 	}
 
-	mat4 rotationMat = mat4(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -15+(mTouchPoint.x-360)/12, -15+(mTouchPoint.y-565)/(-56.5/3), 0, 1) * mat4_cast(lastRotQuat);
+
+	LOGI("velocity_x, Y (%f, %f)\n",  velocity_x,  ancPts.x);
+	position_x = (position_x - velocity_x);
+	position_y = (position_y - velocity_y);
+
+	LOGI("position_x (%f)\n",  position_x);
+	mat4 rotationMat = mat4(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, position_x, position_y, 0, 1) * mat4_cast(lastRotQuat);
 
 	return rotationMat;
 }
