@@ -24,4 +24,10 @@ Read Me file should be updated every week
 * Development environment :
 
 	OpenGL
+	
+* Our goals :
+
+1. object 여러개 띄우기
+2. sensor 값 처리
+3. physics (벽에 대해 공 튀김 등)
 
