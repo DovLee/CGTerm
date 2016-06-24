@@ -8,6 +8,7 @@ class FragLightingView : public SampleView
 public:
 	FragLightingView(void* data) : SampleView(data)
 	{
+
 	}
 
 	void OnInit() override;

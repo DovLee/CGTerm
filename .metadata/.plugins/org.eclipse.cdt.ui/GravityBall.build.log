@@ -1,6 +1,9 @@
-15:03:57 **** Incremental Build of configuration Debug for project GravityBall ****
+09:56:58 **** Build of configuration Debug for project GravityBall ****
 ninja all 
-ninja: no work to do.
+[1/2] Building src/gravityball.o
+[2/2] Linking gravityball
+ninja: build stopped: interrupted by user.
+Command canceled
 
-15:03:57 Build Finished (took 93ms)
+09:56:59 Build Cancelled (took 1s.517ms)
 

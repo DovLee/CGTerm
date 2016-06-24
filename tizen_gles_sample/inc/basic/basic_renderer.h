@@ -48,13 +48,18 @@ protected:
 
 	// vertex buffer
 	std::vector<VertexStruct> mVertexBuffer;
+	std::vector<VertexStruct> mVertexBuffer2;
 	std::vector<GLushort> mIndexBuffer;
+	std::vector<GLushort> mIndexBuffer2;
 	std::vector<glm::vec3> mTangentBuffer;
 
 	// vertex buffer object and index buffer object
 	GLuint mVboVertices;
 	GLuint mVboIndices;
 	GLuint mVboTangents;
+	GLuint mVboVertices2;
+	GLuint mVboIndices2;
+	GLuint mVboTangents2;
 	GLuint mVboInstTransforms;
 
 	// variables for texture handling
@@ -87,11 +92,11 @@ public:
 	bool SetProgram(const char* vertexSource, const char* tessControlSource, const char* tessEvalSource,
 	                const char* geometrySource, const char* fragmentSource) const;
 
-	void SetNewModel(const std::string& objSource, const float& scale);
+	void SetNewModel(const std::string& objSource, const float& scale, const int& index);
 
 	void SetNewModel(char* objSource);
 
-	void SetNewModel(char* objSource, const float& scale);
+	void SetNewModel(char* objSource, const float& scale, const int& index);
 
 	void SetTexture(TexData_Type type, const TexData* newTex);
 
@@ -131,9 +136,9 @@ private:// Utility functions
 
 	void ComputeTangent();
 
-	void ImportModel(char* objSource, BasicRenderer* renderer) const;
+	void ImportModel(char* objSource, BasicRenderer* renderer, const int& index) const;
 
-	void ImportModelScale(char* objSource, BasicRenderer* renderer, const float& scale) const;
+	void ImportModelScale(char* objSource, BasicRenderer* renderer, const float& scale, const int& index) const;
 
 private:// Touch handling funtions
 	glm::mat4 GetInverseTranspose(const glm::mat4& m) const;

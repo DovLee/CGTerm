@@ -21,7 +21,7 @@ void ColoringView::OnInit()
 
 
 	float scale = 6.0f;
-	mViewRenderer->SetNewModel(teapot, scale);
+	mViewRenderer->SetNewModel(teapot, scale, 0);
 	mViewRenderer->SetTexture(TEXDATA_GENERAL, &textJ);
 
 	mViewRenderer->Initialize();

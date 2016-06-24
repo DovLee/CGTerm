@@ -1,0 +1,30 @@
+#ifndef __FRAG_LIGHTING_VIEW_H__
+#define __FRAG_LIGHTING_VIEW_H__
+
+#include "sample_view.h"
+#include "gles_sample.h"
+
+class FragLightingView : public SampleView
+{
+public:
+	FragLightingView(void* data) : SampleView(data)
+	{
+		appdata_s* ad = static_cast<appdata_s *>(data);
+		Evas_Object *view = ad->win;
+		Evas_Object *popup = elm_popup_add(view);
+		elm_popup_align_set(popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
+		elm_object_style_set(popup, "toast");
+		elm_object_text_set(popup, "You did it!");
+		evas_object_show(popup);
+
+	}
+
+	void OnInit() override;
+
+	void OnStep() override;
+};
+
+
+#endif //__FRAG_LIGHTING_VIEW_H__
+
+

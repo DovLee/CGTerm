@@ -47,5 +47,8 @@ typedef struct appdata
 	Eina_Bool initialized :1;
 } appdata_s;
 
+static void
+create_popup(Evas_Object *parent);
+
 #endif /* __GLES_SAMPLE_H__ */
 

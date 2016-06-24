@@ -8,8 +8,9 @@ using namespace std;
 using namespace glm;
 float velocity_x = 0;
 float velocity_y = 0;
-float position_x = 0;
-float position_y = 0;
+float position_x = -265;
+float position_y = -430;
+Evas_Object *popup, *parent;
 
 BasicRenderer::BasicRenderer() :
 	mWidth(0),
@@ -39,6 +40,8 @@ BasicRenderer::BasicRenderer() :
 	mTimer = new BasicTimer();
 	mCamera = new BasicCamera();
 	mShader = new BasicShader();
+	popup = elm_popup_add(parent);
+	elm_object_style_set(popup, "toast");
 }
 
 BasicRenderer::~BasicRenderer()
@@ -83,24 +86,24 @@ bool BasicRenderer::SetProgram(const char* vertexSource, const char* fragmentSou
 /****************************
  **** Interface functions ***
  ****************************/
-void BasicRenderer::SetNewModel(const std::string& objSource, const float& scale)
+void BasicRenderer::SetNewModel(const std::string& objSource, const float& scale, const int& index)
 {
 	char* buffer = new char[objSource.length() + 1];
 	strcpy(buffer, objSource.c_str());
 
-	SetNewModel(buffer, scale);
+	SetNewModel(buffer, scale, index);
 
 	delete (buffer);
 }
 
 void BasicRenderer::SetNewModel(char* objSource)
 {
-	ImportModel(objSource, this);
+	ImportModel(objSource, this, 0);
 }
 
-void BasicRenderer::SetNewModel(char* objSource, const float& scale)
+void BasicRenderer::SetNewModel(char* objSource, const float& scale, const int& index)
 {
-	ImportModelScale(objSource, this, scale);
+	ImportModelScale(objSource, this, scale, index);
 	mHasTexture = true;
 }
 
@@ -442,12 +445,12 @@ void BasicRenderer::ComputeTangent()
 	}
 }
 
-void BasicRenderer::ImportModel(char* objSource, BasicRenderer* renderer) const
+void BasicRenderer::ImportModel(char* objSource, BasicRenderer* renderer, const int& index) const
 {
-	ImportModelScale(objSource, renderer, 1.0f);
+	ImportModelScale(objSource, renderer, 1.0f, index);
 }
 
-void BasicRenderer::ImportModelScale(char* objSource, BasicRenderer* renderer, const float& scale) const
+void BasicRenderer::ImportModelScale(char* objSource, BasicRenderer* renderer, const float& scale, const int& index) const
 {
 	LOGI("funcition : getObjModel\n");
 
@@ -511,12 +514,22 @@ void BasicRenderer::ImportModelScale(char* objSource, BasicRenderer* renderer, c
 				if (findIter != strIndexer.end())
 				{
 					// this face already in vertex data
-					renderer->mIndexBuffer.push_back(std::distance(strIndexer.begin(), findIter));
+					if(index == 0){
+						renderer->mIndexBuffer.push_back(std::distance(strIndexer.begin(), findIter));
+					}
+					else {
+						renderer->mIndexBuffer2.push_back(std::distance(strIndexer.begin(), findIter));
+					}
 				}
 				else
 				{
 					unsigned short face_index = static_cast<unsigned short>(strIndexer.size());
-					renderer->mIndexBuffer.push_back(face_index);
+					if(index == 0){
+						renderer->mIndexBuffer.push_back(face_index);
+					}
+					else {
+						renderer->mIndexBuffer2.push_back(face_index);
+					}
 					strIndexer.push_back(face);
 
 					VertexStruct newVertex;
@@ -528,7 +541,12 @@ void BasicRenderer::ImportModelScale(char* objSource, BasicRenderer* renderer, c
 					num = util_strtok(NULL, "/", &numPtr); // normal index
 					newVertex.nor = norCoords.at(atoi(num) - 1);
 
-					renderer->mVertexBuffer.push_back(newVertex);
+					if(index == 0){
+						renderer->mVertexBuffer.push_back(newVertex);
+					}
+					else {
+						renderer->mVertexBuffer2.push_back(newVertex);
+					}
 				}
 			}
 
@@ -585,30 +603,28 @@ mat4 BasicRenderer::GetWorldMatrix() const
 			if (ancPts.x != mTouchPoint.x || ancPts.y != mTouchPoint.y)
 			{
 
-				if( fabs(velocity_x * (1 - 0.05) ) >= 0){
+				if(fabs(velocity_x * (1 - 0.05) ) >= 0){
 					    velocity_x *= (1 - 0.05);
 				} else {
 						velocity_x = 0;
 
 				}
 
-
-				if( (position_x - velocity_x) <= 265 && (position_x - velocity_x) >= -265){
-						velocity_x +=  (mTouchPoint.x - 360)/(-36.0*3);
-				}
-				else {
-						velocity_x = -velocity_x*1.2;
-				}
-
-
-				if( fabs(velocity_y * (1 - 0.05) ) >= 0){
+				if(fabs(velocity_y * (1 - 0.05) ) >= 0){
 						velocity_y *= (1 - 0.05);
 				} else {
 						velocity_y = 0;
 				}
 
 
-				if( (position_y - velocity_y) <= 435 && (position_y - velocity_y) >= -430){
+				if((position_x - velocity_x) <= 265 && (position_x - velocity_x) >= -265){
+						velocity_x +=  (mTouchPoint.x - 360)/(-36.0*3);
+				}
+				else {
+						velocity_x = -velocity_x*1.2;
+				}
+
+				if((position_y - velocity_y) <= 430 && (position_y - velocity_y) >= -430){
 						velocity_y +=  (mTouchPoint.y - 565)/(56.5*3);
 				}
 				else {
@@ -617,6 +633,35 @@ mat4 BasicRenderer::GetWorldMatrix() const
 				}
 
 
+				if((position_x - velocity_x) >= 50){
+
+					if((position_y - velocity_y) <= 100 && (position_y - velocity_y) >=-100){
+
+						if((position_x - velocity_x) <= 60 && (position_x - velocity_x) >= 50){
+
+							velocity_x = -velocity_x*1.2;
+
+						}
+						else {
+
+							velocity_y = -velocity_y*1.2;
+
+						}
+
+					}
+
+
+				}
+
+
+				if((position_x >= 260 && position_x <= 265) && (position_y >= 425 && position_x <= 430)){
+
+					LOGI("You did it!");
+
+				}
+
+
+				LOGI("Posis X, Y (%f, %f)\n",  (position_x - velocity_x),  (position_y - velocity_y));
 				LOGI("Darsan X, Y (%f, %f)\n",  mTouchPoint.x,  mTouchPoint.y);
 				// Get the vectors on the arcball
 				vec3 va = GetArcballVector(ancPts);

@@ -23,7 +23,7 @@ void NormalMappingView::OnInit()
 	*/
 	
 	float scale = 1.0f;
-	mViewRenderer->SetNewModel(teapot, scale);
+	mViewRenderer->SetNewModel(teapot, scale, 0);
 	mViewRenderer->SetTexture(TEXDATA_GENERAL, &tex);
 	mViewRenderer->SetTexture(TEXDATA_NORMAL_MAP, &normal_tex);
 	//mViewRenderer->SetTexture(TEXDATA_HEIGHT_MAP, &height_tex);

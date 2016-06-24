@@ -12,6 +12,7 @@ SampleView::SampleView(void* data) :
 	mViewRenderer(NULL)
 {
 	mGLView = CreateView(data);
+
 	mViewRenderer = new BasicRenderer();
 	Renderer = mViewRenderer;
 }
@@ -29,6 +30,8 @@ void SampleView::Release()
 		mViewRenderer = NULL;
 	}
 }
+
+
 
 static void accelerometer_cb(sensor_h sensor, sensor_event_s *event, void *data)
 {
@@ -56,6 +59,8 @@ static void accelerometer_cb(sensor_h sensor, sensor_event_s *event, void *data)
 		Renderer->SetTouchPoint(static_cast<float>(gyr_x * (-36) + 360), static_cast<float>(gyr_y * 56.5 + 565));
 	}
 	*/
+
+
 }
 
 static int register_accelerometer_callback(appdata_s *ad)
@@ -243,10 +248,13 @@ SampleView::CreateView(void* data) const
 
 	register_accelerometer_callback(ad);
 
+
+
 	evas_object_data_set(glview, "ad", ad);
 	evas_object_data_set(glview, "ani", ani);
 	evas_object_data_set(glview, "sv", this);
 
 	return glview;
 }
+
 

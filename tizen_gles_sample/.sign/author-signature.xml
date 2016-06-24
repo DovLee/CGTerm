@@ -4,7 +4,7 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="bin%2Ftizen_gles_sample">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>Ud2+QS+mkvaQp1SMtuhpWbjG+IAvz7SJUv52Piqu6Io=</DigestValue>
+<DigestValue>+uaauMl3tJML+BIRwwHfH0otp6JUWLk0hlq0PG9cbw8=</DigestValue>
 </Reference>
 <Reference URI="res%2Fobj3d%2Fball">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -56,11 +56,11 @@
 </Reference>
 <Reference URI="res%2Fshader%2Fview_nor%2Fnor.fs">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>+MaP5c0e1EG6kAJ9g3mk6Y23VKTjYXHBQFjzFcv7xMw=</DigestValue>
+<DigestValue>0S9jruxkWJ6y1Uv26KRPvSoEUwqtfzIc9jLa1YeHIzs=</DigestValue>
 </Reference>
 <Reference URI="res%2Fshader%2Fview_nor%2Fnor.vs">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>r8q9nXQWW6qJ+++5VGmb8SXtaIE/C9xwXOPwk4e8heU=</DigestValue>
+<DigestValue>mSlc4Rrd3VpMcjYOO9dTBuAcK/igcogzcxvK6c3lOV8=</DigestValue>
 </Reference>
 <Reference URI="res%2Ftex%2FFig7_xx_Tex2.bmp">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -243,11 +243,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-fpCjA7lHrGHRcqxh0XgeTkGBauRvAfZWOzXXTIvL+9bkDwlVdU+ep2YUNzijLe3xfzPYTWXbf7Yv
-Ykvb5ZwoYxW3D9ksQMuwULtGwt1QeVjw3yMJETCba53K/4i5BpulKtZBq6BIt3k7CzauiAgOt7ip
-0esPkQ3tXcXNtmuFOdHGacyT7yS2PDs4nz0WirQNOb55+7aWxwtXQv4YLyxL1qIN9zM5IqkXbX0n
-5bcrhExNAQNJgEdlmr6PfmntBe3CGWpqA7MQeixF96WJvAscV5sRFLGM6cIWajFc0/RgWuG/440d
-MDjGGH88InF3q6UMXpGuvai0U5Ud/QP5UtkSpQ==
+DsyuDIMBIvrmbZK1++uZcyccRyKNGtCYecM4HhHqO/IDjgdrs9YkW/X345iiXJo6iUik7Ykg9HgI
+BBUcZ2gLD9sUtqMTfTxKCqOIrP0BhWgkUFms5kjIENYcJnvq/SmzmYdRrVGBjNLIBuRps3jWc+zg
+j2lO34uO8DIG605CClPJdKQwv2wEO2Dg5FtMAoXyuOE5LapzCN/ykmzD0r5merUo0zgBVv0z2Z1s
+eCybdIoNQ0uyVthhjTE0a+gn95zTFD0R6u1wWQWjUf316tH/xavCsJ8Cl2WN2ymM0gTA9AlaIoJu
+bA3OoKIMfr3F1U6IAZyBAbm4dQSEPsvS6T5PwQ==
 </SignatureValue>
 <KeyInfo>
 <X509Data>
