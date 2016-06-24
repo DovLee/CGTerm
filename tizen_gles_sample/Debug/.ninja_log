@@ -60,3 +60,13 @@
 107	12339	0	src/renderer/platform/tizen/basic_file_loader_tizen.o	ee4c023cbe37ec36
 96	14316	0	src/sample/sample_launcher.o	81088916dd32771b
 14335	17477	0	tizen_gles_sample	a0cfd04d2dd74dea
+87	9379	0	src/sample/coloring_view.o	a923a10307c846ed
+9380	12694	0	tizen_gles_sample	a0cfd04d2dd74dea
+97	8949	0	src/sample/normal_mapping_view.o	62922c49b3d4d55d
+8949	11940	0	tizen_gles_sample	a0cfd04d2dd74dea
+91	12702	0	src/renderer/basic_renderer.o	58a19d0d1cbb9006
+12703	16073	0	tizen_gles_sample	a0cfd04d2dd74dea
+83	11538	0	src/renderer/basic_renderer.o	58a19d0d1cbb9006
+11538	14514	0	tizen_gles_sample	a0cfd04d2dd74dea
+87	12237	0	src/renderer/basic_renderer.o	58a19d0d1cbb9006
+12237	15328	0	tizen_gles_sample	a0cfd04d2dd74dea

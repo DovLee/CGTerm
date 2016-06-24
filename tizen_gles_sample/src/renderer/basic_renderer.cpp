@@ -633,11 +633,11 @@ mat4 BasicRenderer::GetWorldMatrix() const
 				}
 
 
-				if((position_x - velocity_x) >= 50){
+				if((position_x - velocity_x) >= 80){
 
-					if((position_y - velocity_y) <= 100 && (position_y - velocity_y) >=-100){
+					if((position_y - velocity_y) <= 415 && (position_y - velocity_y) >=-110){
 
-						if((position_x - velocity_x) <= 60 && (position_x - velocity_x) >= 50){
+						if((position_x - velocity_x) <= 90 && (position_x - velocity_x) >= 80){
 
 							velocity_x = -velocity_x*1.2;
 
@@ -652,6 +652,27 @@ mat4 BasicRenderer::GetWorldMatrix() const
 
 
 				}
+
+				if((position_x - velocity_x) <= -110){
+
+						if((position_y - velocity_y) <= -140 && (position_y - velocity_y) >=-400){
+
+							if((position_x - velocity_x) <= -100 && (position_x - velocity_x) >= -110){
+
+									velocity_x = -velocity_x*1.2;
+
+							}
+							else {
+
+									velocity_y = -velocity_y*1.2;
+
+							}
+
+						}
+
+
+				}
+
 
 
 				if((position_x >= 260 && position_x <= 265) && (position_y >= 425 && position_x <= 430)){
