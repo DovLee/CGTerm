@@ -217,7 +217,7 @@ main(int argc, char* argv[])
 
 	ui_app_lifecycle_callback_s event_callback = {NULL,};
 
-	ad.name = "GyroBall 3D";
+	ad.name = "tizen_gles_sample";
 
 	event_callback.create = app_create;
 	event_callback.terminate = app_terminate;

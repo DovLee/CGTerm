@@ -248,6 +248,8 @@ SampleView::CreateView(void* data) const
 
 	register_accelerometer_callback(ad);
 
+
+
 	evas_object_data_set(glview, "ad", ad);
 	evas_object_data_set(glview, "ani", ani);
 	evas_object_data_set(glview, "sv", this);
