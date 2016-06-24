@@ -30,6 +30,7 @@ typedef struct Mine {
 	bool mIsAutoRotateEye;
 	bool mIsFill;
 	bool mIsTouchOn;
+	Evas_Object *POPUP;
 	// Stores Touch Point x, y determined by scrolling screen
 	glm::vec2 mTouchPoint;
 	// vertex buffer
@@ -106,6 +107,7 @@ protected:
 	bool mIsFill;
 
 	bool mIsTouchOn;
+	Evas_Object *POPUP;
 	// Stores Touch Point x, y determined by scrolling screen
 	glm::vec2 mTouchPoint;
 
@@ -235,6 +237,8 @@ public:
 
 	void SetTouchPoint(const float& x, const float& y);
 
+	void SetPop(Evas_Object *popUP);
+
 	void OnAutoRotate();
 
 	void OffAutoRotate();
@@ -254,6 +258,12 @@ inline void BasicRenderer::SetTouchPoint(const float& x, const float& y) {
 	LOGI("Touch Point (x,y): (%f,%f)\n", x, y);
 	Mines[0].mTouchPoint.x = x;
 	Mines[0].mTouchPoint.y = y;
+}
+
+inline void BasicRenderer::SetPop(Evas_Object *popUP) {
+
+	POPUP = popUP;
+
 }
 
 inline void BasicRenderer::OnAutoRotate() {
@@ -276,6 +286,5 @@ inline void BasicRenderer::TouchOff() {
 	mIsTouchOn = false;
 }
 
-static void create_popup(Evas_Object *parent);
 
 #endif //__BASIC_RENDERER_H__

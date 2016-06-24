@@ -32,6 +32,8 @@ BasicRenderer::BasicRenderer() {
 	mCamera = new BasicCamera();
 	mShader = new BasicShader();
 
+	POPUP = NULL;
+
 	Mines[0].mTimer = NULL, Mines[0].mCamera = NULL, Mines[0].mShader = NULL,
 
 	Mines[1].mTimer = NULL, Mines[1].mCamera = NULL, Mines[1].mShader = NULL,
@@ -1521,19 +1523,7 @@ mat4 BasicRenderer::GetWorldMatrix4() const {
 	return rotationMat;
 
 }
-static void create_popup(Evas_Object *parent) {
-	Evas_Object *popup;
 
-	popup = elm_popup_add(parent);
-	elm_popup_align_set(popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
-	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK,
-			eext_popup_back_cb, parent);
-	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-	elm_object_style_set(popup, "toast");
-	elm_object_text_set(popup, "Welcome!");
-
-	evas_object_show(popup);
-}
 
 mat4 BasicRenderer::GetWorldMatrix() const {
 	static quat startRotQuat = quat_cast(mat3(1));
@@ -1623,7 +1613,7 @@ mat4 BasicRenderer::GetWorldMatrix() const {
 				if ((position_x >= 260 && position_x <= 265)
 						&& (position_y >= 425 && position_x <= 430)) {
 
-					LOGI("You did it!");
+
 
 				}
 
@@ -1673,8 +1663,9 @@ mat4 BasicRenderer::GetWorldMatrix() const {
 	LOGI("my_position_x (%f) my_position_y (%f)\n", position_x, position_y);
 
 	//////////////////FINISH LINE
-	if (position_y > 410 && position_y < 430 && position_x < 265
-			&& position_x > 245) {
+	if (position_y > 420 && position_y < 430 && position_x < 265
+			&& position_x > 255) {
+		evas_object_show(POPUP);
 		LOGI("game Win");	//finished
 		gameWin = true;
 

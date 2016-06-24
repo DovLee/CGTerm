@@ -86,9 +86,9 @@ static void create_popup(Evas_Object *parent) {
 	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	elm_object_style_set(popup, "toast");
 	elm_object_text_set(popup, "Welcome!"); // popup at the beginning
-
+	elm_popup_timeout_set(popup, 1.0);
 	evas_object_show(popup);
-	elm_popup_timeout_set(popup, 2.0);
+
 }
 
 static Evas_Object*

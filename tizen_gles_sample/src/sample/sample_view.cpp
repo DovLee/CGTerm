@@ -9,9 +9,20 @@ Evas_Object* my_obj;
 BasicRenderer* Renderer;
 
 SampleView::SampleView(void* data) :
-		mGLView(NULL), mViewRenderer(NULL) {
+	mGLView(NULL), mViewRenderer(NULL) {
 	mGLView = CreateView(data);
 	mViewRenderer = new BasicRenderer();
+
+	Evas_Object *popup;
+
+	popup = elm_popup_add(mGLView);
+	elm_popup_align_set(popup, ELM_NOTIFY_ALIGN_FILL, 1.0);
+	evas_object_size_hint_weight_set(popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, eext_popup_back_cb, mGLView);
+	elm_object_style_set(popup, "toast");
+	elm_object_text_set(popup, "You win!");
+
+	mViewRenderer->SetPop(popup);
 	Renderer = mViewRenderer;
 }
 
