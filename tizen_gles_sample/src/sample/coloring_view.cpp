@@ -4,48 +4,51 @@
 
 using namespace std;
 
-ColoringView::ColoringView(void* data): SampleView(data)
-{
+ColoringView::ColoringView(void* data) :
+		SampleView(data) {
 }
 
-void ColoringView::OnInit()
-{
-
-	/*
-	string vs = FileLoader::GetInstance()->ReadTxtFile("shader/view_f_lit/f_lit.vs");
-	string fs = FileLoader::GetInstance()->ReadTxtFile("shader/view_f_lit/f_lit.fs");
-	mViewRenderer->SetProgram(vs, fs);
-	*/
-	string vs = FileLoader::GetInstance()->ReadTxtFile("shader/view_nor/nor.vs");
-	string fs = FileLoader::GetInstance()->ReadTxtFile("shader/view_nor/nor.fs");
+void ColoringView::OnInit() {
+	string vs = FileLoader::GetInstance()->ReadTxtFile(
+			"shader/view_nor/nor.vs");
+	string fs = FileLoader::GetInstance()->ReadTxtFile(
+			"shader/view_nor/nor.fs");
 	mViewRenderer->SetProgram(vs, fs);
 
 	string ball = FileLoader::GetInstance()->ReadTxtFile("obj3d/sphere3");
-	string teapot = FileLoader::GetInstance()->ReadTxtFile("obj3d/teapot");
+	string obstacle1 = FileLoader::GetInstance()->ReadTxtFile("obj3d/cube");
+	string obstacle2 = FileLoader::GetInstance()->ReadTxtFile("obj3d/cube");
+	string goal = FileLoader::GetInstance()->ReadTxtFile("obj3d/sphere3");
 
-	/*
-	TexData textJ;
-	FileLoader::GetInstance()->ReadTexture("tex/soccer.jpg", textJ);
-	*/
-	TexData tex, normal_tex;
-	//height_tex;
-	FileLoader::GetInstance()->ReadTexture("tex/photosculpt-autumnleaves-diffuse.jpg", tex);
-	FileLoader::GetInstance()->ReadTexture("tex/photosculpt-autumnleaves-normal.jpg", normal_tex);
-	//FileLoader::GetInstance()->ReadTexture("tex/photosculpt-graystonewall-ambientocclusion.jpg", height_tex);
+	TexData ball_tex, ball_normal_tex;
+	TexData obstacle1_tex, obstacle1_normal_tex;
+	TexData obstacle2_tex, obstacle2_normal_tex;
+	TexData goal_tex, goal_normal_tex;
+	FileLoader::GetInstance()->ReadTexture(
+			"tex/photosculpt-autumnleaves-diffuse.jpg", ball_tex);
+	FileLoader::GetInstance()->ReadTexture(
+			"tex/photosculpt-mixedstones-diffuse.jpg", obstacle1_tex);
+	FileLoader::GetInstance()->ReadTexture(
+			"tex/photosculpt-mixedstones-diffuse.jpg", obstacle2_tex);
+	FileLoader::GetInstance()->ReadTexture("tex/black.jpg", goal_tex);
 
-	/*
+	FileLoader::GetInstance()->ReadTexture(
+			"tex/photosculpt-autumnleaves-normal.jpg", ball_normal_tex);
+	FileLoader::GetInstance()->ReadTexture(
+			"tex/photosculpt-mixedstones-normal.jpg", obstacle1_normal_tex);
+	FileLoader::GetInstance()->ReadTexture(
+			"tex/photosculpt-mixedstones-normal.jpg", obstacle2_normal_tex);
+	FileLoader::GetInstance()->ReadTexture("tex/plain.jpg", goal_normal_tex);
+
 	float scale = 30.0f;
-	mViewRenderer->SetNewModel(ball, scale);
-	mViewRenderer->SetTexture(TEXDATA_GENERAL, &textJ);
-	*/
-	float scale = 30.0f;
-	mViewRenderer->SetNewModel(ball, scale, 0);
-	mViewRenderer->SetNewModel(teapot, scale, 1);
-	mViewRenderer->SetTexture(TEXDATA_GENERAL, &tex);
-	mViewRenderer->SetTexture(TEXDATA_NORMAL_MAP, &normal_tex);
+	mViewRenderer->SetNewModel(ball, obstacle1, obstacle2, goal, scale);
+	mViewRenderer->SetTexture(TEXDATA_GENERAL, &ball_tex, &obstacle1_tex,
+			&obstacle2_tex, &goal_tex);
+	mViewRenderer->SetTexture(TEXDATA_NORMAL_MAP, &ball_normal_tex,
+			&obstacle1_normal_tex, &obstacle2_normal_tex, &goal_normal_tex);
 
 	mViewRenderer->Initialize();
-	// glClearColor(0.1f, 0.1f, 0.3f, 0.0f);
+	glClearColor(0.5f, 0.5f, 0.1f, 0.0f);
 
 	mViewRenderer->GetCamera()->SetEye(0, 0, 800);
 	mViewRenderer->GetCamera()->SetAt(0, 0, 0);

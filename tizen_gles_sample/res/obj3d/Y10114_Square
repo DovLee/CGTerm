@@ -1,0 +1,22 @@
+# 
+# 
+mtllib Square.mtl
+# object Object #0
+g Object__0
+v -1.00531 -1 0
+v 0.99469 -1 0
+v -1.00531 1 0
+v 0.99469 1 0
+# 4 verticies
+usemtl Material__1
+f  2 1 3
+f  3 4 2
+# object Object #2
+g Object__2
+v -1.00531 -1 0
+v 0.99469 -1 0
+v -1.00531 1 0
+v 0.99469 1 0
+# 4 verticies
+f  5 6 8
+f  8 7 5

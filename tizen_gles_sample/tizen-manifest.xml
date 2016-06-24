@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <manifest xmlns="http://tizen.org/ns/packages" api-version="2.4" package="org.example.tizen_gles_sample" version="1.0.0">
+    <description>2013210130 장민재&#13;
+2013210132 이명지&#13;
+2013210135 Ganbat Munkhsoyol&#13;
+from Korea University Comp dep.</description>
     <profile name="mobile"/>
     <ui-application appid="org.example.tizen_gles_sample" exec="tizen_gles_sample" multiple="false" nodisplay="false" taskmanage="true" type="capp">
-        <label>tizen_gles_sample</label>
-        <icon>tizen_gles_sample.png</icon>
+        <label>GyroBall3D</label>
+        <icon>ball.png</icon>
     </ui-application>
 </manifest>

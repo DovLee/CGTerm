@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>tizen_gles_sample</name>
+	<name>GyroBall3D</name>
 	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
+		<buildCommand>
+			<name>org.tizen.nativecore.apichecker.apicheckerbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 		<buildCommand>
 			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
 			<arguments>
@@ -28,10 +33,11 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 		<nature>org.tizen.nativecore.apichecker.core.tizenCppNature</nature>
+		<nature>org.tizen.nativecore.apichecker.apicheckernature</nature>
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1452136741638</id>
+			<id>0</id>
 			<name></name>
 			<type>26</type>
 			<matcher>

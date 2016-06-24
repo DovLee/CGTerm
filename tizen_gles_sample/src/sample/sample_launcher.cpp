@@ -48,6 +48,8 @@ Evas_Object* SampleLauncher::InitSampleView(void* data)
 	appdata_s* ad = static_cast<appdata_s *>(data);
 	int sampleNum = ad->cur_sample_num;
 
+	LOGI("initsampleview");
+
 	mParent = ad->win;
 
 	if (curView)

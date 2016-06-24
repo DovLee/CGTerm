@@ -5,137 +5,124 @@ ELEMENTARY_GLVIEW_GLOBAL_DEFINE()
 
 float gyr_x;
 float gyr_y;
+Evas_Object* my_obj;
 BasicRenderer* Renderer;
 
 SampleView::SampleView(void* data) :
-	mGLView(NULL),
-	mViewRenderer(NULL)
-{
+		mGLView(NULL), mViewRenderer(NULL) {
 	mGLView = CreateView(data);
-
 	mViewRenderer = new BasicRenderer();
 	Renderer = mViewRenderer;
 }
 
-SampleView::~SampleView()
-{
+SampleView::~SampleView() {
 	Release();
 }
 
-void SampleView::Release()
-{
-	if (mViewRenderer)
-	{
+void SampleView::Release() {
+	if (mViewRenderer) {
 		delete mViewRenderer;
 		mViewRenderer = NULL;
 	}
 }
 
+static void accelerometer_cb(sensor_h sensor, sensor_event_s *event,
+		void *data) {
+	LOGI("Sensor X, Y, Z (%f, %f, %f)\n", (float )event->values[0],
+			(float )event->values[1], (float )event->values[2]);
 
-
-static void accelerometer_cb(sensor_h sensor, sensor_event_s *event, void *data)
-{
-	LOGI("Sensor X, Y, Z (%f, %f, %f)\n", (float)event->values[0], (float)event->values[1], (float)event->values[2]);
-
-	 gyr_x = (float)event->values[0];
-	 gyr_y = (float)event->values[1];
+	gyr_x = (float) event->values[0];
+	gyr_y = (float) event->values[1];
 
 	// Renderer->GetCamera()->RotateAuto(double(gyr_x/10));
 	// Renderer->GetCamera()->MoveLeft(double(gyr_y));
 
+	Renderer->SetTouchPoint(static_cast<float>(gyr_x * (-36) + 360),
+			static_cast<float>(gyr_y * 56.5 + 565));
 
+	/*
+	 if(gyr_x < -1){
+	 for(int i=0; i<5; i++){
+	 temp_x += gyr_x + i;
+	 temp_y += gyr_y + i;
+	 Renderer->SetTouchPoint(static_cast<float>(temp_x * (-36) + 360), static_cast<float>(temp_y * 56.5 + 565));
+	 }
+	 }
+	 else {
 	 Renderer->SetTouchPoint(static_cast<float>(gyr_x * (-36) + 360), static_cast<float>(gyr_y * 56.5 + 565));
-	 /*
-	if(gyr_x < -1){
-
-		for(int i=0; i<5; i++){
-
-			temp_x += gyr_x + i;
-			temp_y += gyr_y + i;
-			Renderer->SetTouchPoint(static_cast<float>(temp_x * (-36) + 360), static_cast<float>(temp_y * 56.5 + 565));
-		}
-	}
-	else {
-		Renderer->SetTouchPoint(static_cast<float>(gyr_x * (-36) + 360), static_cast<float>(gyr_y * 56.5 + 565));
-	}
-	*/
-
-
+	 }
+	 */
 }
 
-static int register_accelerometer_callback(appdata_s *ad)
-{
+static int register_accelerometer_callback(appdata_s *ad) {
 	int error;
 	bool supported;
 	sensor_h accelerometer;
 	sensor_listener_h accelerationListener;
 
-	error = sensor_is_supported( SENSOR_ACCELEROMETER, &supported );
-	if(error != SENSOR_ERROR_NONE && supported){
+	error = sensor_is_supported(SENSOR_ACCELEROMETER, &supported);
+	if (error != SENSOR_ERROR_NONE && supported) {
 		return error;
 	}
 
 	error = sensor_get_default_sensor(SENSOR_ACCELEROMETER, &accelerometer);
-	if(error != SENSOR_ERROR_NONE){
+	if (error != SENSOR_ERROR_NONE) {
 		return error;
 	}
 
-	error = sensor_create_listener( accelerometer, &accelerationListener);
-	if(error != SENSOR_ERROR_NONE){
+	error = sensor_create_listener(accelerometer, &accelerationListener);
+	if (error != SENSOR_ERROR_NONE) {
 		return error;
 	}
 
-	error = sensor_listener_set_event_cb( accelerationListener, ACCELEROMETER_INTERVAL_MS, accelerometer_cb, ad );
-	if(error != SENSOR_ERROR_NONE){
+	error = sensor_listener_set_event_cb(accelerationListener,
+			ACCELEROMETER_INTERVAL_MS, accelerometer_cb, ad);
+	if (error != SENSOR_ERROR_NONE) {
 		return error;
 	}
 
-	error = sensor_listener_start( accelerationListener );
+	error = sensor_listener_start(accelerationListener);
 
 	return SENSOR_ERROR_NONE;
 }
 
-static void
-mouse_down_cb(void* data, Evas* e, Evas_Object* obj, void* event_info)
-{
+static void mouse_down_cb(void* data, Evas* e, Evas_Object* obj,
+		void* event_info) {
 	LOGI("mouse_down_cb: touch on\n");
 	appdata_s* ad = static_cast<appdata_s *>(evas_object_data_get(obj, "ad"));
 	SampleView* sv = static_cast<SampleView *>(evas_object_data_get(obj, "sv"));
 	Evas_Event_Mouse_Down* ev = static_cast<Evas_Event_Mouse_Down *>(event_info);
 
-	sv->TouchOn();
+	//sv->TouchOn();
 	LOGI("Touch Point (x,y): (%d,%d)\n", ev->canvas.x, ev->canvas.y);
-	sv->SetTouchPoint(static_cast<float>(ev->canvas.x), static_cast<float>(ev->canvas.y));
+	sv->SetTouchPoint(static_cast<float>(ev->canvas.x),
+			static_cast<float>(ev->canvas.y));
 
 	ad->mouse_down = EINA_TRUE;
 }
 
-static void
-mouse_move_cb(void* data, Evas* e, Evas_Object* obj, void* event_info)
-{
+static void mouse_move_cb(void* data, Evas* e, Evas_Object* obj,
+		void* event_info) {
 	LOGI("mouse_move_cb: touch move\n");
 	SampleView* sv = static_cast<SampleView *>(evas_object_data_get(obj, "sv"));
 	Evas_Event_Mouse_Move* ev = static_cast<Evas_Event_Mouse_Move *>(event_info);
 
 	LOGI("Touch Point (x,y): (%d,%d)\n", ev->cur.canvas.x, ev->cur.canvas.y);
-	sv->SetTouchPoint(static_cast<float>(ev->cur.canvas.x), static_cast<float>(ev->cur.canvas.y));
+	//sv->SetTouchPoint(static_cast<float>(ev->cur.canvas.x), static_cast<float>(ev->cur.canvas.y));
 }
 
-static void
-mouse_up_cb(void* data, Evas* e, Evas_Object* obj, void* event_info)
-{
+static void mouse_up_cb(void* data, Evas* e, Evas_Object* obj,
+		void* event_info) {
 	LOGI("mouse_up_cb: touch off\n");
 	appdata_s* ad = static_cast<appdata_s *>(data);
 	SampleView* sv = static_cast<SampleView *>(evas_object_data_get(obj, "sv"));
 
-	sv->TouchOff();
+	//sv->TouchOff();
 	ad->mouse_down = EINA_FALSE;
 }
 
-
-static void
-resize_glview(Evas_Object* obj)
-{
+static void resize_glview(Evas_Object* obj) {
+	LOGI("resize_glview!!!!!!!");
 	LOGE("resize_glview\n");
 	appdata_s* ad = static_cast<appdata_s *>(evas_object_data_get(obj, "ad"));
 	elm_glview_size_get(obj, &ad->glview_w, &ad->glview_h);
@@ -145,54 +132,49 @@ resize_glview(Evas_Object* obj)
 	//    update_window(ad->glview_w, ad->glview_h);
 }
 
-static void
-draw_glview(Evas_Object* obj)
-{
+static void draw_glview(Evas_Object* obj) {
 	SampleView* sv = static_cast<SampleView *>(evas_object_data_get(obj, "sv"));
 	sv->OnStep();
 	glFlush();
 	//    step();
 }
 
-static void
-init_glview(Evas_Object* obj)
-{
+static void init_glview(Evas_Object* obj) {
 	LOGE("init_glview\n");
 	SampleView* sv = static_cast<SampleView *>(evas_object_data_get(obj, "sv"));
-	if (sv == NULL)
-	LOGE("null ptr??\n");
+	if (sv == NULL) {
+		LOGI("error_init");LOGE("null ptr??\n");
+	}
 
+	LOGI("Oninit!!!!!1");
 	sv->OnInit();
 	LOGE("init_glview??\n");
 	//    init(ad->cur_sample_num, obj);
 }
 
-static void
-del_glview(Evas_Object* obj)
-{
+static void del_glview(Evas_Object* obj) {
 	LOGE("del_glview\n");
 	SampleView* sv = static_cast<SampleView *>(evas_object_data_get(obj, "sv"));
 	sv->Release();
 }
 
-static void
-del_anim_cb(void* data, Evas* evas, Evas_Object* obj, void* event_info)
-{
-	Ecore_Animator* ani = static_cast<Ecore_Animator *>(evas_object_data_get(obj, "ani"));
+static void del_anim_cb(void* data, Evas* evas, Evas_Object* obj,
+		void* event_info) {
+	Ecore_Animator* ani = static_cast<Ecore_Animator *>(evas_object_data_get(
+			obj, "ani"));
 	ecore_animator_del(ani);
 }
 
-static Eina_Bool
-anim_cb(void* data)
-{
+static Eina_Bool anim_cb(void* data) {
 	// notify glview should be updated again
 	elm_glview_changed_set(static_cast<Evas_Object *>(data));
 	return EINA_TRUE;
 }
 
 Evas_Object*
-SampleView::CreateView(void* data) const
-{
+SampleView::CreateView(void* data) const {
+	LOGI("velocity_dasasfasfafsasaf");
+
 	appdata_s* ad = static_cast<appdata_s *>(data);
 
 	/* Create and initialize GLView */
@@ -201,8 +183,8 @@ SampleView::CreateView(void* data) const
 	ELEMENTARY_GLVIEW_GLOBAL_USE(glview);
 
 	evas_object_size_hint_align_set(glview, EVAS_HINT_FILL, EVAS_HINT_FILL);
-	evas_object_size_hint_weight_set(glview, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-
+	evas_object_size_hint_weight_set(glview, EVAS_HINT_EXPAND,
+			EVAS_HINT_EXPAND);
 
 	/* Request a surface with alpha and a depth buffer */
 	elm_glview_mode_set(glview, ELM_GLVIEW_DEPTH);
@@ -240,13 +222,18 @@ SampleView::CreateView(void* data) const
 	 * GL so this animator needs to be deleted with ecore_animator_del().
 	 */
 	Ecore_Animator* ani = ecore_animator_add(anim_cb, glview);
-	evas_object_event_callback_add(glview, EVAS_CALLBACK_DEL, del_anim_cb, glview);
+	evas_object_event_callback_add(glview, EVAS_CALLBACK_DEL, del_anim_cb,
+			glview);
 	//
-	evas_object_event_callback_add(glview, EVAS_CALLBACK_MOUSE_DOWN, mouse_down_cb, ad);
-	evas_object_event_callback_add(glview, EVAS_CALLBACK_MOUSE_UP, mouse_up_cb, ad);
-	evas_object_event_callback_add(glview, EVAS_CALLBACK_MOUSE_MOVE, mouse_move_cb, ad);
+	evas_object_event_callback_add(glview, EVAS_CALLBACK_MOUSE_DOWN,
+			mouse_down_cb, ad);
+	evas_object_event_callback_add(glview, EVAS_CALLBACK_MOUSE_UP, mouse_up_cb,
+			ad);
+	evas_object_event_callback_add(glview, EVAS_CALLBACK_MOUSE_MOVE,
+			mouse_move_cb, ad);
 
 	register_accelerometer_callback(ad);
+	//getLoader()->Release();
 
 	evas_object_data_set(glview, "ad", ad);
 	evas_object_data_set(glview, "ani", ani);
@@ -254,5 +241,3 @@ SampleView::CreateView(void* data) const
 
 	return glview;
 }
-
-

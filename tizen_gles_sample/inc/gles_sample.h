@@ -21,7 +21,6 @@
 #include <Elementary.h>
 #include <dlog.h>
 
-
 #ifdef LOG_TAG
 #undef LOG_TAG
 #endif
@@ -30,13 +29,16 @@
 #define LOGI(...)  dlog_print(DLOG_INFO,LOG_TAG,__VA_ARGS__)
 #define LOGE(...)  dlog_print(DLOG_ERROR,LOG_TAG,__VA_ARGS__)
 
-typedef struct appdata
-{
+typedef struct appdata {
 	const char* name;
 
 	Evas_Object* win;
 	Evas_Object* conform;
 	Evas_Object* navi;
+
+	Evas_Object *hole;
+	float velocity_x;
+	float velocity_y;
 
 	const char* cur_sample_name;
 	int cur_sample_num;
@@ -46,7 +48,6 @@ typedef struct appdata
 	Eina_Bool mouse_down :1;
 	Eina_Bool initialized :1;
 } appdata_s;
-
 static void
 create_popup(Evas_Object *parent);
 

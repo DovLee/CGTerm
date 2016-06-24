@@ -33,7 +33,6 @@ inline Evas_Object* SampleLauncher::GetParent() const
 	return mParent;
 }
 
-
 #endif //__SAMPLE_LAUNCHER_H__
 
 
